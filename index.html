@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Jogo da Velha</h1>
+
+    <section id="status" class="status" aria-live="polite">
+      Vez do jogador <strong>X</strong>
+    </section>
+
+    <section class="board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </section>
+
+    <section id="placar" class="placar">
+      <p>🏆 Jogador X: <span id="pontos-x">0</span></p>
+      <p>🏆 Jogador O: <span id="pontos-o">0</span></p>
+      <p>🤝 Empates: <span id="pontos-empate">0</span></p>
+    </section>
+
+    <div class="controls">
+      <button id="reset">🔄 Reiniciar Jogo</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

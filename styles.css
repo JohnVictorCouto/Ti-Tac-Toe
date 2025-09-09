@@ -1,0 +1,89 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.status {
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+  max-width: min(90vw, 400px);
+  margin: 0 auto;
+}
+
+.cell {
+  aspect-ratio: 1 / 1;
+  background: #1e293b;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  font-size: clamp(2rem, 10vw, 3rem);
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cell:hover:not(:disabled) { background: #334155; }
+.cell:disabled { cursor: not-allowed; opacity: 0.9; }
+
+.cell.x { color: #22c55e; }
+.cell.o { color: #ef4444; }
+.cell.win { background: #facc15; color: #111; }
+
+.controls button {
+  padding: 10px 16px;
+  font-size: clamp(1rem, 4vw, 1.1rem);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+.controls button:hover { background: #1d4ed8; }
+
+.placar {
+  text-align: center;
+  background: rgba(255,255,255,0.08);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: clamp(0.9rem, 4vw, 1.1rem);
+  display: grid;
+  gap: 6px;
+}
+.placar p {
+  margin: 4px 0;
+}
