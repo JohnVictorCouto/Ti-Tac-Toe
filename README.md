@@ -15,4 +15,4 @@ Um simples **Jogo da Velha (Tic-Tac-Toe)** desenvolvido com **HTML, CSS e JavaSc
 ---
 
 ## Preview
-https://johnvictorcouto.github.io/Ti-Tac-Toe/
+https://johnvictorcouto.github.io/Tic-Tac-Toe/
