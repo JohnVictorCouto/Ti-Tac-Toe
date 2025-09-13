@@ -1,4 +1,4 @@
-# Jogo da Velha
+# Jogo da Velha (Tic-Tac-Toe)
 
 Um simples **Jogo da Velha (Tic-Tac-Toe)** desenvolvido com **HTML, CSS e JavaScript puro**. O projeto inclui um placar que conta as vitórias dos jogadores X e O, além de empates.
 
